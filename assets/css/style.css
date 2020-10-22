@@ -53,6 +53,14 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
 .body {
   background-color: #fff;
 }
@@ -61,16 +69,97 @@ ul {
   margin: 0 auto;
   padding-left: 75px;
   padding-right: 75px;
-  max-width: 1950px;
+  max-width: 1920px;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.btn {
+  display: block;
 }
 
 /* Header */
 
+.header {
+  padding: 14px 0;
+  max-height: 100px;
+}
+
 .header-container {
   display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 709px;
+}
+
+.header-nav-item:not(:last-child) {
+  /* margin-right: 85px; */
+}
+
+.search-icon {
+  margin-left: 71px;
+  width: 26px;
+  height: 26px;
+  background: url(/assets/img/search.svg) center center no-repeat;
+  background-size: cover;
 }
 
 /* Hero Section */
+
+.hero-section {
+  margin: 0;
+}
+
+.hero-container {
+  padding: 103px 78px 91px;
+  background: url(/assets/img/balconies.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.hero-content {
+  max-width: 842px;
+}
+
+.hero-heading {
+  margin: 0;
+  font-weight: 800;
+  font-size: 70.37px;
+  line-height: 86px;
+  color: #fff;
+}
+
+.hero-text {
+  margin: 0;
+  margin-top: 32px;
+  font-weight: bold;
+  font-size: 23.4581px;
+  line-height: 29px;
+  color: #FFFFFF;
+}
+
+.hero-btn {
+  margin-top: 97px;
+  padding: 25.83px 0;
+  max-width: 280.52px;
+  font-weight: bold;
+  font-size: 23.4581px;
+  line-height: 29px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #ff9900;
+}
+
+/* About Section */
 
 .about-advantages-block {
   display: flex;
@@ -80,4 +169,32 @@ ul {
 
 .steps-list {
   display: flex;
+}
+
+.how-info-block {
+  display: flex;
+}
+
+/* FAQ Section*/
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.faq-plus-icon {
+  width: 30px;
+  height: 30px;
+  background: url(/assets/img/+х.svg) center center no-repeat;
+}
+
+/* Footer */
+
+.footer-container {
+  display: flex;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
 }
