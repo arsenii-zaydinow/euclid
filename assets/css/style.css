@@ -120,7 +120,7 @@ a {
   width: 25.5px;
   height: 25.62px;
   background: url(/assets/img/search.svg) center center no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
 }
 
 /* Hero Section */
@@ -131,8 +131,9 @@ a {
 
 .hero-container {
   padding: 103px 78px 91px;
-  background: url(/assets/img//balconies-3.jpg) center center no-repeat;
-  background-size: contain;
+  border: 0.98px solid black;
+  background: url(/assets/img//balconies.jpg) center center no-repeat;
+  background-size: cover;
 }
 
 .hero-content {
@@ -153,7 +154,7 @@ a {
   font-weight: bold;
   font-size: 23.4581px;
   line-height: 29px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .hero-btn {
@@ -165,7 +166,7 @@ a {
   font-size: 23.4581px;
   line-height: 29px;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
   background: #ff9900;
 }
 
@@ -184,15 +185,86 @@ a {
 }
 
 .about-advantages-block {
-  margin-top: 47px;
+  margin-top: 44px;
 }
 
 .about-more-block {
+  position: relative;
   width: calc(50% - 15px);
+  height: 100%;
+}
+
+.about-more-img {
+  display: block;
+}
+
+.about-more-text-block {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 41px 68px 41px 54px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-more-text {
+  margin: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 32px;
+  color: #fff;
+}
+
+.about-more-btn {
+  width: 100%;
+  max-width: 175px;
+  margin-left: 78px;
+  padding: 17px 0;
+  max-width: 175px;
+  border: 3px solid #ff9900;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
 }
 
 .advantages-block {
   width: calc(50% - 15px);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.advantages-item {
+  display: flex;
+  padding: 71px 118px;
+  border: 1px solid #cacaca;
+}
+
+.advantages-box-icon {
+  width: 100%;
+  max-width: 178px;
+  height: 137px;
+  background: url(/assets/img/box.svg);
+  background-size: 100% auto;
+}
+
+.advantages-gear-icon {
+  width: 100%;
+  max-width: 178px;
+  height: 153px;
+  background: url(/assets/img/gear.svg);
+  background-size: 100% auto;
 }
 
 /* How Section */
