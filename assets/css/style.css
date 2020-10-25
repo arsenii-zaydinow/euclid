@@ -251,7 +251,11 @@ a {
   border: 1px solid #cacaca;
 }
 
-.advantages-block__box-icon {
+.advantages-block__item:nth-child(n+2) {
+  margin-top: 30px;
+}
+
+.advantages-block__icon_box {
   width: 100%;
   max-width: 178px;
   height: 137px;
@@ -259,7 +263,7 @@ a {
   background-size: 100% auto;
 }
 
-.advantages-block__gear-icon {
+.advantages-block__icon_gear {
   width: 100%;
   max-width: 178px;
   height: 153px;
@@ -290,19 +294,92 @@ a {
 /* How Section */
 
 .how-section-heading {
-  margin-bottom: 38px;
+  margin-bottom: 49px;
 }
 
 .steps {
   display: flex;
 }
 
+.steps__item {
+  font-size: 18px;
+  line-height: 22px;
+  color: #333;
+  cursor: pointer;
+}
+
+.steps__item_selected {
+  color: #ff9900;
+}
+
 .steps__item:not(:last-child) {
-  margin-right: 85px;
+  margin-right: 90px;
 }
 
 .how-info-block {
   display: flex;
+  justify-content: space-between;
+  padding-top: 44px;
+}
+
+.how-info-block__text-block {
+  width: calc(50% - 15px);
+  max-width: 758px;
+}
+
+.how-info-block__heading {
+  margin: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  color: #333;
+}
+
+.how-info-block__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 32.5px;
+  color: #333;
+}
+
+.how-info-block__btn-block {
+  display: flex;
+  margin-top: 57px;
+}
+
+.how-info-block__btn_fill {
+  margin-right: 30px;
+  padding: 20px 0;
+  width: 100%;
+  max-width: 175px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #ff9900;;
+}
+
+.how-info-block__btn_border {
+  padding: 18px 0;
+  border: 1px solid #333;
+  width: 100%;
+  max-width: 147px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.how-info-block__img-block {
+  width: calc(50% - 15px);
+}
+
+.how-info-block__img {
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10px;
 }
 
 /* FAQ Section*/
