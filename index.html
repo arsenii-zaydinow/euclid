@@ -256,13 +256,19 @@
           </nav>
           <ul class="footer__social-list">
             <li class="footer__social-item">
-              <span class="footer__icon footer__icon_fb"></span>
+              <a class="footer__social-item-link" href="#">
+                <span class="footer__icon footer__icon_fb"></span>
+              </a>
             </li>
             <li class="footer__social-item">
-              <span class="footer__icon footer__icon_vk"></span>
+              <a class="footer__social-item-link" href="#">
+                <span class="footer__icon footer__icon_vk"></span>
+              </a>
             </li>
             <li class="footer__social-item">
-              <span class="footer__icon footer__icon_inst"></span>
+              <a class="footer__social-item-link" href="#">
+                <span class="footer__icon footer__icon_inst"></span>
+              </a>
             </li>
           </ul>
         </div>
@@ -273,12 +279,12 @@
           <form class="footer__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
             <input class="footer__input" type="text" name="name" placeholder="Фамилия, имя и отчество*" required>
             <input class="footer__input" type="email" name="email" placeholder="E-mail*" required>
-            <textarea class="footer__textarea" name="message" placeholder="Сообщение" cols="30" rows="10"></textarea>
+            <textarea class="footer__textarea" name="message" placeholder="Сообщение"></textarea>
             <div class="footer__form-btn-block">
-              <button class="footer__btn">
+              <button class="footer__form-btn">
                 Отправить данные
               </button>
-              <input id="personal-data" class="footer__checkbox" type="checkbox">
+              <input class="footer__checkbox" id="personal-data" type="checkbox">
               <label class="footer__label" for="personal-data">
                 Согласен на обработу данных
               </label>
