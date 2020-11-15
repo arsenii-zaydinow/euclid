@@ -499,6 +499,7 @@ a {
 }
 
 .faq__icon_plus {
+  margin-left: 27px;
   width: 50px;
   height: 50px;
   background: url(../img/+х.svg) center center no-repeat;
@@ -609,7 +610,7 @@ a {
   margin-left: 20px;
   margin-right: 236px;
   width: 100%;
-  width: 570px;
+  max-width: 576px;
 }
 
 .form-heading {
@@ -624,7 +625,6 @@ a {
 .footer__form {
   display: flex;
   flex-direction: column;
-  width: 570px;
 }
 
 .footer__input {
@@ -805,7 +805,7 @@ a {
   }
 
   .about-more-block {
-    width: 100% !important;
+    width: 100%;
   }
 
   .about-more-block__img {
@@ -823,22 +823,61 @@ a {
 
   .advantages-block {
     margin-top: 50px;
-    width: 100% !important;
+    width: 100%;
   }
 
   .advantages-block__item {
-    display: flex !important;
-    padding: 67px 110px 50px 112px;
+    display: flex;
+    align-items: center;
+    padding: 67px 110px 65px 112px;
   }
 
   .advantages-block__item:nth-child(n+2) {
-    margin-top: 40px !important;
+    margin-top: 40px;
+  }
+
+  .advantages-block__icon {
+    margin-bottom: 0;
   }
 
   .advantages-block__item-desc {
-    margin-left: 59px !important;
+    margin-left: 59px;
   }
-  
+
+  .how-info-block__text-block {
+    width: calc(50% - 25px);
+  }
+
+  .how-info-block__btn-block {
+    margin-top: 28px;
+  }
+
+  .how-info-block__img-block {
+    width: calc(50% - 25px);
+  }
+
+  .faq__heading {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .faq__item {
+    padding: 20px 0;
+  }
+
+  .footer__form-block {
+    margin-right: 0;
+    max-width: 535px;
+  }
+
+  .footer__form-btn {
+    max-width: 241px;
+  }
+
+  .footer__checkbox + label {
+    margin-left: 16px;
+  }
+
   .footer__text {
     display: none;
   }
@@ -865,7 +904,7 @@ a {
   }
 }
 
-@media (max-width: 1670px) {
+@media (min-width: 1025px) and (max-width: 1670px) {
 
   .about-more-block {
     width: calc(60% - 10px);
