@@ -237,6 +237,15 @@ a {
   border-radius: 50%;
   background-color: #fff;
   opacity: 40%;
+  cursor: pointer;
+}
+
+.hero-container__circle:hover {
+  opacity: 70%;
+}
+
+.hero-container__circle:active {
+  opacity: 100%;
 }
 
 .hero-container__circle_active {
