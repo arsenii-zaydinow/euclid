@@ -144,14 +144,14 @@ a {
   color: #333;
 }
 
-.header-nav__link:active {
-  border-bottom: 2px solid #ff990099;
-}
-
 .header-nav__link_selected, .header-nav__link:hover {
   border-bottom: 2px solid #ff9900;
 }
 
+.header-nav__link:active {
+  border-bottom: 2px solid #e1670e;
+  color: #e1670e;
+}
 
 .header-container__search-icon {
   margin-left: 71px;
@@ -167,9 +167,14 @@ a {
   background: url(../img/search-hover.svg) center center no-repeat;
 }
 
+.header-container__search-icon:active {
+  background: url(../img/search-active.svg) center center no-repeat;
+}
+
 /* Hero Section */
 
 .hero-section {
+  position: relative;
   margin: 0;
 }
 
@@ -228,8 +233,13 @@ a {
   background-color: #ff9900;
 }
 
-.hero-container__btn:active {
+.hero-container__btn:hover {
   opacity: 60%;
+}
+
+.hero-container__btn:active {
+  opacity: 100%;
+  background-color: #e1670e;
 }
 
 .hero-container__circles-block {
@@ -247,21 +257,16 @@ a {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: #fff;
-  opacity: 40%;
+  background-color: #ffffff66;
   cursor: pointer;
 }
 
 .hero-container__circle:hover {
-  opacity: 70%;
-}
-
-.hero-container__circle:active {
-  opacity: 100%;
+  border: 1px solid #fff;
 }
 
 .hero-container__circle_active {
-  opacity: 100%;
+  background-color: #fff;
 }
 
 /* About Section */
@@ -340,8 +345,13 @@ a {
   color: #fff;
 }
 
-.about-more-block__btn:active {
+.about-more-block__btn:hover {
   background-color: #ff9900;
+}
+
+.about-more-block__btn:active {
+  border: 3px solid #e1670e;
+  background-color: #e1670e;
 }
 
 .advantages-block {
@@ -424,6 +434,10 @@ a {
   color: #ff9900;
 }
 
+.steps__item:active {
+  color: #e1670e;
+}
+
 .steps__item:not(:last-child) {
   margin-right: 90px;
 }
@@ -475,8 +489,13 @@ a {
   background-color: #ff9900;
 }
 
-.how-info-block__btn_fill:active {
+.how-info-block__btn_fill:hover {
   opacity: 60%;
+}
+
+.how-info-block__btn_fill:active {
+  opacity: 100%;
+  background-color: #e1670e;
 }
 
 .how-info-block__btn_border {
@@ -490,8 +509,13 @@ a {
   text-align: center;
 }
 
-.how-info-block__btn_border:active {
+.how-info-block__btn_border:hover {
   background-color: #333;
+  color: #fff;
+}
+
+.how-info-block__btn_border:active {
+  background-color: #000;
   color: #fff;
 }
 
@@ -529,8 +553,21 @@ a {
   border-top: 1px solid #cacaca;
 }
 
+.faq__item:hover {
+  border-top: 1px solid #ff9900;
+  cursor: pointer;
+}
+
 .faq__item:last-child {
   border-bottom: 1px solid #cacaca;
+}
+
+.faq__item:last-child:hover {
+  border-bottom: 1px solid #ff9900;
+}
+
+.faq__item:hover + .faq__item {
+  border-top: 1px solid #ff9900;
 }
 
 .faq__heading {
@@ -542,7 +579,7 @@ a {
   cursor: pointer;
 }
 
-.faq__heading:hover {
+.faq__item:hover .faq__heading {
   color: #ff9900;
 }
 
@@ -560,7 +597,7 @@ a {
   cursor: pointer;
 }
 
-.faq__icon_plus:hover {
+.faq__item:hover .faq__icon_plus {
   background: url(../img/+х-hover.svg) center center no-repeat;
 }
 
@@ -596,12 +633,12 @@ a {
 }
 
 .footer__nav-link:hover {
-  color: #ff9900;
+  opacity: 60%;
 }
 
 .footer__nav-link:active {
-  color: #ff9900;
-  opacity: 60%;
+  opacity: 1000%;
+  color: #e1670e;
 }
 
 .footer__social-list {
@@ -624,12 +661,12 @@ a {
 }
 
 .footer__icon_fb:hover {
-  background: url(../img/fb-hover.svg) center center no-repeat;
+  opacity: 60%;
 }
 
 .footer__icon_fb:active {
+  opacity: 100%;
   background: url(../img/fb-hover.svg) center center no-repeat;
-  opacity: 60%;
 }
 
 .footer__icon_vk {
@@ -637,12 +674,12 @@ a {
 }
 
 .footer__icon_vk:hover {
-  background: url(../img/vk-hover.svg) center center no-repeat;
+  opacity: 60%;
 }
 
 .footer__icon_vk:active {
+  opacity: 100%;
   background: url(../img/vk-hover.svg) center center no-repeat;
-  opacity: 60%;
 }
 
 .footer__icon_inst {
@@ -650,12 +687,12 @@ a {
 }
 
 .footer__icon_inst:hover {
-  background: url(../img/inst-hover.svg) center center no-repeat;
+  opacity: 60%;
 }
 
 .footer__icon_inst:active {
+  opacity: 100%;
   background: url(../img/inst-hover.svg) center center no-repeat;
-  opacity: 60%;
 }
 
 .footer__form-block {
@@ -737,8 +774,13 @@ a {
   background-color: #ff9900;
 }
 
-.footer__form-btn:active {
+.footer__form-btn:hover {
   opacity: 60%;
+}
+
+.footer__form-btn:active {
+  opacity: 100%;
+  background-color: #e1670e;
 }
 
 .footer__checkbox {
