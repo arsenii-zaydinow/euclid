@@ -112,6 +112,20 @@ a {
     color: #333;
 }
 
+.orange-focus:focus {
+    border-radius: 0;
+    outline: 2px solid #ff9900;
+}
+
+.white-focus:focus {
+    border-radius: 0;
+    outline: 2px solid #fff;
+}
+
+.black-focus:focus {
+    border-radius: 0;
+    outline: 2px solid #000;
+}
 
 /* Side menu */
 
@@ -691,6 +705,14 @@ a {
     padding: 37px 0;
 }
 
+.faq__header:focus .faq__heading {
+    color: #ff9900;
+}
+
+.faq__header:focus .faq__icon_plus {
+    background: url(../img/+х-hover.svg) center center / contain;
+}
+
 .faq__header .ui-accordion-header-icon {
     display: none;
 }
@@ -805,6 +827,10 @@ a {
 
 .footer__social-item:not(:last-child) {
     margin-right: 25px;
+}
+
+.footer__social-item-link {
+    display: block;
 }
 
 .footer__icon {
@@ -962,6 +988,11 @@ a {
     border: 1px solid #cacaca;
     width: 12px;
     height: 12px;
+}
+
+.footer__checkbox:focus+label {
+    border-radius: 0;
+    outline: 2px solid #ff9900;
 }
 
 .footer__checkbox:checked+label::before {
@@ -1208,6 +1239,7 @@ a {
     .footer__social-item:not(:last-child) {
         margin-right: 14.5px;
     }
+
     .footer__icon {
         width: 35px;
         height: 35px;
