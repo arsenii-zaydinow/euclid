@@ -6,7 +6,9 @@ document.addEventListener('DOMContentLoaded', () => {
         this.classList.add('header-container__burger-menu_active');
         document.body.style.overflow = 'hidden';
         document.querySelector('.overlay').classList.add('overlay_active');
-        document.querySelector('.burger-menu').classList.add('burger-menu_opened');
+        const burgerMenu = document.querySelector('.burger-menu');
+        burgerMenu.style.visibility = 'visible';
+        burgerMenu.classList.add('burger-menu_opened');
     });
 
     document.querySelector('.burger-menu__close-icon').addEventListener('click', function(event) {
@@ -28,6 +30,10 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.header-container__burger-menu').classList.remove('header-container__burger-menu_active');
         document.body.style.overflow = 'scroll';
         document.querySelector('.overlay').classList.remove('overlay_active');
-        document.querySelector('.burger-menu').classList.remove('burger-menu_opened');
+        const burgerMenu = document.querySelector('.burger-menu');
+        burgerMenu.classList.remove('burger-menu_opened');
+        setTimeout(() => {
+            burgerMenu.style.visibility = 'hidden';
+        }, 500);
     };
 });
