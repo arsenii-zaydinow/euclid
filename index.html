@@ -47,7 +47,7 @@
     <header class="header">
         <div class="container header-container">
             <span class="header-container__burger-menu"></span>
-            <a class="header-container__logo orange-focus" href="#" tabindex="1">
+            <a class="header-container__logo orange-focus" href="#" tabindex="1" aria-label="Логотип">
                 <img class="header-container__logo-img" src="assets/img/logo.png" alt="Евклид - проектные системы">
             </a>
             <nav class="header-nav">
@@ -74,25 +74,29 @@
                     </li>
                 </ul>
             </nav>
-            <span class="header-container__search-icon orange-focus" tabindex="6"></span>
+            <button 
+                class="header-container__search-icon orange-focus"
+                tabindex="6"
+                aria-label="Поиск"
+            ></button>
         </div>
     </header>
 
     <main>
 
         <section id="main" class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="container hero-container swiper-slide">
-                    <img class="hero-container__img" src="assets/img/hero-1.jpg" alt="Балконы">
-                </div>
-                <div class="container hero-container swiper-slide">
-                    <img class="hero-container__img" src="assets/img/hero-2.jpg" alt="Балконы">
-                </div>
-                <div class="container hero-container swiper-slide">
-                    <img class="hero-container__img" src="assets/img/hero-3.jpg" alt="Балконы">
-                </div>
-            </div>
-            <div class="swiper-pagination hero-pagination"></div>
+            <ul class="swiper-wrapper">
+                <li class="container hero-container swiper-slide">
+                    <img class="hero-container__img" src="assets/img/hero-1.jpg" alt="Балконы 1">
+                </li>
+                <li class="container hero-container swiper-slide">
+                    <img class="hero-container__img" src="assets/img/hero-2.jpg" alt="Балконы 2">
+                </li>
+                <li class="container hero-container swiper-slide">
+                    <img class="hero-container__img" src="assets/img/hero-3.jpg" alt="Балконы 3">
+                </li>
+            </ul>
+            <div class="swiper-pagination hero-pagination" aria-label="Пагинация свайпера"></div>
             <div class="container hero-container__content-container">
                 <div class="hero-container__content">
                     <h1 class="hero-container__heading">
@@ -102,9 +106,9 @@
                         Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом
                         проектантов
                     </p>
-                    <a class="btn hero-container__btn white-focus" href="#" tabindex="7">
+                    <button class="btn hero-container__btn white-focus" href="#" tabindex="7">
                         Заказать расчёт
-                    </a>
+                    </button>
                 </div>
             </div>
         </section>
@@ -133,9 +137,9 @@
                                 Принимая во внимание показатели успешности, перспективное планирование способствует
                                 подготовке и реализации новых принципов.
                             </p>
-                            <a class="btn about-more-block__btn white-focus" href="#">
+                            <button class="btn about-more-block__btn white-focus" href="#">
                                 Подробнее
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="advantages-block">
@@ -208,12 +212,12 @@
                             к ответу.
                         </p>
                         <div class="how-info-block__btn-block">
-                            <a class="btn how-info-block__btn_fill black-focus" href="#">
+                            <button class="btn how-info-block__btn_fill black-focus" href="#">
                                 Подробнее
-                            </a>
-                            <a class="btn how-info-block__btn_border orange-focus" href="#">
+                            </button>
+                            <button class="btn how-info-block__btn_border orange-focus" href="#">
                                 Договор
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="how-info-block__img-block">
@@ -235,12 +239,12 @@
                             независимых исследований.
                         </p>
                         <div class="how-info-block__btn-block">
-                            <a class="btn how-info-block__btn_fill black-focus" href="#">
+                            <button class="btn how-info-block__btn_fill black-focus" href="#">
                                 Подробнее
-                            </a>
-                            <a class="btn how-info-block__btn_border orange-focus" href="#">
+                            </button>
+                            <button class="btn how-info-block__btn_border orange-focus" href="#">
                                 Договор
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="how-info-block__img-block">
@@ -264,12 +268,12 @@
                             задания по разработке прогресса профессионального сообщества.
                         </p>
                         <div class="how-info-block__btn-block"> 
-                            <a class="btn how-info-block__btn_fill black-focus" href="#">
+                            <button class="btn how-info-block__btn_fill black-focus" href="#">
                                 Подробнее
-                            </a>
-                            <a class="btn how-info-block__btn_border orange-focus" href="#">
+                            </button>
+                            <button class="btn how-info-block__btn_border orange-focus" href="#">
                                 Договор
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="how-info-block__img-block">
@@ -290,12 +294,12 @@
                             обеспечение нашей деятельности позволяет.
                         </p>
                         <div class="how-info-block__btn-block">
-                            <a class="btn how-info-block__btn_fill black-focus" href="#">
+                            <button class="btn how-info-block__btn_fill black-focus" href="#">
                                 Подробнее
-                            </a>
-                            <a class="btn how-info-block__btn_border orange-focus" href="#">
+                            </button>
+                            <button class="btn how-info-block__btn_border orange-focus" href="#">
                                 Договор
-                            </a>
+                            </button>
                         </div>
                     </div>
                     <div class="how-info-block__img-block">
@@ -457,7 +461,7 @@
     <footer id="contacts" class="section footer">
         <div class="container footer-container">
             <div class="footer__nav-block">
-                <a class="footer__logo orange-focus" href="#">
+                <a class="footer__logo orange-focus" href="#" aria-label="Логотип">
                     <img class="footer__logo-img" src="assets/img/logo-footer.png" alt="Евклид - проектные системы">
                 </a>
                 <nav class="footer__nav">
@@ -501,17 +505,17 @@
                 </nav>
                 <ul class="footer__social-list">
                     <li class="footer__social-item">
-                        <a class="footer__social-item-link orange-focus" href="#">
+                        <a class="footer__social-item-link orange-focus" href="#" role="button" aria-label="Фейсбук">
                             <span class="footer__icon footer__icon_fb"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a class="footer__social-item-link orange-focus" href="#">
+                        <a class="footer__social-item-link orange-focus" href="#" role="button" aria-label="В контакте">
                             <span class="footer__icon footer__icon_vk"></span>
                         </a>
                     </li>
                     <li class="footer__social-item">
-                        <a class="footer__social-item-link orange-focus" href="#">
+                        <a class="footer__social-item-link orange-focus" href="#" role="button" aria-label="Инстаграм">
                             <span class="footer__icon footer__icon_inst"></span>
                         </a>
                     </li>
